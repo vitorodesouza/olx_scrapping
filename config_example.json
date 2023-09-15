@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "description": "This is the config document where you can replace with data to adapt this project to your reality",
+    "database": "Database info to connect with the Postgres database of this project.",
+    "scraping_parameters": "Parameters to guide the script in the scrapping process"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "username": "your postgres username",
+    "password": "your password",
+    "database": "olx_webscrapping",
+    "tables": {
+      "scrap_table": "olx_scraptable"
+    }
+  },
+  "scraping_parameters": {
+    "metadata": {
+      "description": "Parameters for the script to scrap data from Olx website",
+      "features_to_scrap": "List all the features to be scrapped by the script",
+      "list_type_features": "The features inside the list in a list-type feature",
+      "list_type_features_map": "Map to know which labels to extract from the json",
+      "states": "List of all the states that will be scrapped by the script"
+    },
+    "features_to_scrap": {
+      "Title": "title",
+      "Price": "price",
+      "Old price": "oldPrice",
+      "Professional_Ad": "professionalAd",
+      "Featured": "isFeatured",
+      "Link": "url",
+      "Date": "date",
+      "Location": "location",
+      "Category": "category",
+      "Properties": "properties"
+    },
+    "list_type_features": {
+      "Properties": [
+        "vehicle_model",
+        "vehicle_brand",
+        "cartype",
+        "regdate",
+        "mileage",
+        "motorpower",
+        "fuel",
+        "gearbox",
+        "car_steering",
+        "carcolor",
+        "doors",
+        "end_tag",
+        "owner",
+        "exchange",
+        "financial",
+        "car_features",
+        "gnv_kit",
+        "owner_manual",
+        "extra_key",
+        "dealership_review",
+        "warranty",
+        "has_gnv_kit",
+        "has_auction",
+        "has_paid_ipva",
+        "has_with_fine",
+        "is_settled",
+        "is_funded",
+        "indexed_financial_status",
+        "documentation_and_regularization",
+        "conservation_and_warranty",
+        "indexed_car_steering",
+        "on_autos_fair"
+      ]
+    },
+    "list_type_features_map":{
+      "Properties":{
+        "Column": "name",
+        "Value": "value"
+      }
+    },
+    "states": {
+      "Acre": "ac",
+      "Alagoas": "al",
+      "Amapá": "ap",
+      "Amazonas": "am",
+      "Bahia": "ba",
+      "Ceara": "ce",
+      "Distrito Federal": "df",
+      "Espirito Santo": "es",
+      "Goias": "go",
+      "Maranhão": "ma",
+      "Mato Grosso": "mt",
+      "Mato Grosso do Sul": "ms",
+      "Minas Gerais": "mg",
+      "Para": "pa",
+      "Paraiba": "pb",
+      "Parana": "pr",
+      "Pernambuco": "pe",
+      "Piaui": "pi",
+      "Rio de Janeiro": "rj",
+      "Rio Grande do Norte": "rn",
+      "Rio Grande do Sul": "rs",
+      "Rondonia": "ro",
+      "Roraima": "rr",
+      "Santa Catarina": "sc",
+      "Sao Paulo": "sp",
+      "Sergipe": "se",
+      "Tocantins": "to"
+    }
+  }
+}

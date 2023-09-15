@@ -1,0 +1,180 @@
+# Configuration file
+config.json
+
+# Not important folders
+old/
+images/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+.venv/
+env/
+env.bak/
+*.egg-info/
+dist/
+build/
+
+# Logs and Databases
+*.log
+*.sql
+*.sqlite
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+Thumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.user
+*.suo
+*.cache
+*.patch
+*.scc
+Desktop.ini
+desktop.ini
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Text Editor files
+*.txt~
+
+# Dependency directories
+.env
+
+# Python environments
+/.python-version
+
+# Node.js
+/node_modules/
+
+# Compiled output
+/dist/
+/tmp/
+/out-tsc/
+
+# TypeScript
+*.tsbuildinfo
+
+# Yarn
+/yarn-error.log
+
+# Log files
+*.log
+
+# IntelliJ
+.idea/
+*.iws
+*.iml
+
+# Sublime Text
+.sublime-project
+.sublime-workspace
+
+# DB
+*.db
+
+# Other
+*.tmp
+*.bak
+*.swp
+*.cache
+
+# macOS
+.AppleDouble
+.DS_Store
+.LSOverride
+
+# Thumbnails
+._*
+Thumbs.db
+
+# Windows image file caches
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code folders
+.vscode/
+
+# Sublime Text files
+.sublime-project
+.sublime-workspace
+
+# Database files
+*.sqlite3
+*.sqlitedb
+
+# SASS and SCSS files
+*.sass-cache/
+
+# Compiled Python files
+__pycache__/
+*.py[cod]
+
+# Compiled C++ files
+*.out
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/

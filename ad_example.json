@@ -1,0 +1,282 @@
+{
+    "subject": "Jeep Compass Longitude Flex",
+    "title": "Jeep Compass Longitude Flex",
+    "price": "R$ 99.500",
+    "listId": 1221672494,
+    "lastBumpAgeSecs": "56888",
+    "oldPrice": "R$ 102.000",
+    "professionalAd": false,
+    "isFeatured": true,
+    "listingCategoryId": "2020",
+    "images": [
+        {
+            "original": "https://img.olx.com.br/images/97/977361671770520.jpg",
+            "originalAlt": "Jeep Compass Longitude Flex",
+            "originalWebP": "https://img.olx.com.br/images/97/977361671770520.webp",
+            "thumbnail": "https://img.olx.com.br/thumbs/97/977361671770520.jpg"
+        },
+        {
+            "original": "https://img.olx.com.br/images/97/978350790363158.jpg",
+            "originalAlt": "Jeep Compass Longitude Flex - Foto 2",
+            "originalWebP": "https://img.olx.com.br/images/97/978350790363158.webp",
+            "thumbnail": "https://img.olx.com.br/thumbs/97/978350790363158.jpg"
+        },
+        {
+            "original": "https://img.olx.com.br/images/97/971354316598643.jpg",
+            "originalAlt": "Jeep Compass Longitude Flex - Foto 3",
+            "originalWebP": "https://img.olx.com.br/images/97/971354316598643.webp",
+            "thumbnail": "https://img.olx.com.br/thumbs/97/971354316598643.jpg"
+        },
+        {
+            "original": "https://img.olx.com.br/images/97/974333551670358.jpg",
+            "originalAlt": "Jeep Compass Longitude Flex - Foto 4",
+            "originalWebP": "https://img.olx.com.br/images/97/974333551670358.webp",
+            "thumbnail": "https://img.olx.com.br/thumbs/97/974333551670358.jpg"
+        },
+        {
+            "original": "https://img.olx.com.br/images/96/960392433714059.jpg",
+            "originalAlt": "Jeep Compass Longitude Flex - Foto 5",
+            "originalWebP": "https://img.olx.com.br/images/96/960392433714059.webp",
+            "thumbnail": "https://img.olx.com.br/thumbs/96/960392433714059.jpg"
+        },
+        {
+            "original": "https://img.olx.com.br/images/97/976356077960801.jpg",
+            "originalAlt": "Jeep Compass Longitude Flex - Foto 6",
+            "originalWebP": "https://img.olx.com.br/images/97/976356077960801.webp",
+            "thumbnail": "https://img.olx.com.br/thumbs/97/976356077960801.jpg"
+        }
+    ],
+    "videoCount": 0,
+    "isChatEnabled": true,
+    "fixedOnTop": true,
+    "url": "https://sc.olx.com.br/florianopolis-e-regiao/autos-e-pecas/carros-vans-e-utilitarios/jeep-compass-longitude-flex-1221672494",
+    "thumbnail": "https://img.olx.com.br/thumbs256x256/97/977361671770520.jpg",
+    "date": 1694215107,
+    "imageCount": 6,
+    "location": "Florian\u00f3polis, Centro - DDD 48",
+    "category": "Carros, vans e utilit\u00e1rios",
+    "searchCategoryLevelZero": 2000,
+    "searchCategoryLevelOne": 2020,
+    "properties": [
+        {
+            "name": "category",
+            "label": "Categoria",
+            "value": "Carros, vans e utilit\u00e1rios"
+        },
+        {
+            "name": "vehicle_model",
+            "label": "Modelo",
+            "value": "JEEP COMPASS LIMITED 2.0 4X4 DIESEL 16V AUT."
+        },
+        {
+            "name": "vehicle_brand",
+            "label": "Marca",
+            "value": "JEEP"
+        },
+        {
+            "name": "cartype",
+            "label": "Tipo de ve\u00edculo",
+            "value": "SUV"
+        },
+        {
+            "name": "regdate",
+            "label": "Ano",
+            "value": "2019"
+        },
+        {
+            "name": "mileage",
+            "label": "Quilometragem",
+            "value": "67000"
+        },
+        {
+            "name": "motorpower",
+            "label": "Pot\u00eancia do motor",
+            "value": "2.0 - 2.9"
+        },
+        {
+            "name": "fuel",
+            "label": "Combust\u00edvel",
+            "value": "Diesel"
+        },
+        {
+            "name": "gearbox",
+            "label": "C\u00e2mbio",
+            "value": "Autom\u00e1tico"
+        },
+        {
+            "name": "car_steering",
+            "label": "Dire\u00e7\u00e3o",
+            "value": "Hidr\u00e1ulica"
+        },
+        {
+            "name": "carcolor",
+            "label": "Cor",
+            "value": "Branco"
+        },
+        {
+            "name": "doors",
+            "label": "Portas",
+            "value": "4 portas"
+        },
+        {
+            "name": "end_tag",
+            "label": "Final de placa",
+            "value": "6"
+        },
+        {
+            "name": "owner",
+            "label": "\u00danico dono",
+            "value": "Sim"
+        },
+        {
+            "name": "exchange",
+            "label": "Aceita trocas",
+            "value": "Sim"
+        },
+        {
+            "name": "financial",
+            "label": "Estado financeiro",
+            "value": "IPVA Pago"
+        },
+        {
+            "name": "car_features",
+            "label": "Opcionais",
+            "value": "Alarme, Air bag, Ar condicionado, C\u00e2mera de r\u00e9, Sensor de r\u00e9, Som, Trava el\u00e9trica, Vidro el\u00e9trico"
+        },
+        {
+            "name": "gnv_kit",
+            "label": "Kit GNV",
+            "value": "N\u00e3o"
+        },
+        {
+            "name": "owner_manual",
+            "label": "Com manual",
+            "value": "Sim"
+        },
+        {
+            "name": "extra_key",
+            "label": "Chave reserva",
+            "value": "Sim"
+        },
+        {
+            "name": "dealership_review",
+            "label": "Revis\u00f5es feitas em concession\u00e1ria",
+            "value": "Sim"
+        },
+        {
+            "name": "warranty",
+            "label": "Com garantia",
+            "value": "Sim"
+        },
+        {
+            "name": "has_gnv_kit",
+            "label": "Possui Kit GNV",
+            "value": "N\u00e3o"
+        },
+        {
+            "name": "has_auction",
+            "label": "De leil\u00e3o",
+            "value": "N\u00e3o"
+        },
+        {
+            "name": "has_paid_ipva",
+            "label": "IPVA pago",
+            "value": "Sim"
+        },
+        {
+            "name": "has_with_fine",
+            "label": "Com multas",
+            "value": "N\u00e3o"
+        },
+        {
+            "name": "is_settled",
+            "label": "Quitado",
+            "value": "N\u00e3o"
+        },
+        {
+            "name": "is_funded",
+            "label": "Financiado",
+            "value": "N\u00e3o"
+        },
+        {
+            "name": "indexed_financial_status",
+            "label": "Status financeiro indexado",
+            "value": "Desconhecido"
+        },
+        {
+            "name": "documentation_and_regularization",
+            "label": "Documenta\u00e7\u00e3o e regulariza\u00e7\u00e3o",
+            "value": "IPVA Pago"
+        },
+        {
+            "name": "conservation_and_warranty",
+            "label": "Conserva\u00e7\u00e3o e garantia",
+            "value": "\u00danico dono, Com manual, Chave reserva, Revis\u00f5es feitas em concession\u00e1ria, Com garantia"
+        },
+        {
+            "name": "indexed_car_steering",
+            "label": "Tipo de dire\u00e7\u00e3o",
+            "value": "Hidr\u00e1ulica"
+        },
+        {
+            "name": "on_autos_fair",
+            "label": "No Festival de Carros/Feir\u00e3o de Autos",
+            "value": "N\u00e3o"
+        }
+    ],
+    "accountActivityStatus": {
+        "isOnline": false
+    },
+    "position": 0,
+    "olxPay": {
+        "enabled": false,
+        "dynamicBadgeProps": [],
+        "installments": [],
+        "isCategoryEligible": false
+    },
+    "olxPayBadgeEnabled": false,
+    "olxDelivery": {
+        "enabled": false,
+        "weight": null
+    },
+    "olxDeliveryBadgeEnabled": false,
+    "installments": false,
+    "vehicleReport": {
+        "enabled": true,
+        "title": null,
+        "description": null,
+        "reportLink": null,
+        "reportTitle": null,
+        "tags": null
+    },
+    "vehicleTags": [
+        "vehiclehistory"
+    ],
+    "vehiclePills": [
+        {
+            "label": "IPVA pago"
+        },
+        {
+            "label": "N\u00e3o aceita troca"
+        },
+        {
+            "label": "\u00danico dono"
+        }
+    ],
+    "isFavorited": false,
+    "hasRealEstateHighlight": false,
+    "trackingSpecificData": [
+        {
+            "key": "region",
+            "value": "Florian\u00f3polis e regi\u00e3o"
+        },
+        {
+            "key": "model",
+            "value": "COMPASS"
+        },
+        {
+            "key": "version",
+            "value": "COMPASS LONGITUDE 2.0 4X2 FLEX 16V AUT."
+        }
+    ]
+}
