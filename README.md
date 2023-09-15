@@ -72,7 +72,16 @@ You also need to have a PostgreSQL server installed as the script assumes its pr
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+GNU General Public License (GPL) Version 3
+
+The GNU General Public License (GPL) is a free, open-source software license that allows you to share and modify this software. It grants you the following rights:
+
+- The freedom to run the program for any purpose.
+- The freedom to study how the program works and adapt it to your needs.
+- The freedom to redistribute copies so you can help others.
+- The freedom to improve the program and release your improvements to the public.
+
+For detailed terms and conditions, please refer to the [LICENSE](LICENSE) file in this repository.
 
 ## Acknowledgments
 
