@@ -1,8 +1,8 @@
 # OLX.com Car Ads Scraper
 ## Script that allows you to scrap car ads data from OLX.com
 
-![GitHub](https://img.shields.io/github/license/yourusername/olx-car-ads-scraper)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/olx-car-ads-scraper)
+![GitHub](https://img.shields.io/github/license/vitorodesouza/olx_scrapping)
+![GitHub last commit](https://img.shields.io/github/last-commit/vitorodesouza/olx_scrapping)
 
 ## Overview
 
