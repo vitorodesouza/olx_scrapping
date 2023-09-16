@@ -4,6 +4,8 @@ config.json
 # Not important folders
 old/
 images/
+cloud/
+data/
 
 # Python
 __pycache__/

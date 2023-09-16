@@ -93,7 +93,7 @@ def parse_args():
     parser.add_argument('--init', action='store_true', help='Function initialize the project')
     parser.add_argument('-b', '--brand', default='jeep', type=str,required=False, help="Car's brand")
     parser.add_argument('-m', '--model', default='compass', type=str,required=False, help="Car's model")
-    parser.add_argument('-db', '--save_in_database', action='store_true', default=True, required=False, help='Option to save the data in the database')
+    parser.add_argument('-db', '--save_in_database', action='store_true', required=False, help='Option store the data in the database')
     parser.add_argument('--state', nargs='*', default=None, required=False, help='List of states to scrap the data (Separate the states by space). Ex: "sp rj mg"')
     
     return parser.parse_args()

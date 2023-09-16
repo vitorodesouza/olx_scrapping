@@ -14,6 +14,7 @@ This Python script allows you to scrape car ads data from OLX.com, a dynamically
 - Provides a command-line interface for easy usage.
 - Supports scrapping by car brand and model.
 - Supports scrapping by a list of states.
+- Supports storing data directly into a PostgreSQL database.
 - Can initialize a new PostgreSQL database and table for storing data.
 - Follows the rules defined in `robots.txt` for web scraping.
 
@@ -34,16 +35,21 @@ You also need to have a PostgreSQL server installed as the script assumes its pr
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/olx-car-ads-scraper.git
+   git clone https://github.com/vitorodesouza/olx_scrapping
    ```
 
-2. Install the required Python libraries:
+2. Create a virtual environment and install the required Python libraries inside the project's folder:
 
     ```bash
-    pip install -r requirements.txt
+    python -m venv ~/.venv # Create a virtual environment
+    source .venv/bin/activate # Activate your virtual environment (if you're running linux)
+    .venv/Scripts/activate.bat # (if you're running cmd in windows)
+    pip install -r requirements.txt # Install the project's requirements
     ```
 
 3. Update the database configuration in config.json with your PostgreSQL credentials.
+
+Use the config_example.json file as template and replace with your PostgreSQL credentials.
 
 ## Usage
 
@@ -59,7 +65,7 @@ You also need to have a PostgreSQL server installed as the script assumes its pr
     To scrape car ads data, use the following command:
 
     ```bash
-    python OlxScrapping.py -b <brand> -m <model> -s <state1> <state2> ...
+    python OlxScrapping.py --scrap -b <brand> -m <model> -s <state1> <state2> ...
     ```
 
     Replace <brand> and <model> with the desired car brand and model, and <state1> <state2> ... with the list of states you want to scrape data from.
@@ -67,8 +73,10 @@ You also need to have a PostgreSQL server installed as the script assumes its pr
 3. Save Data to Database Option
 
     ```bash
-    python OlxScrapping.py -b <brand> -m <model> -s <state1> <state2> ... -db
+    python OlxScrapping.py --scrap -b <brand> -m <model> -s <state1> <state2> ... -db
     ```
+
+    If you don't choose this option, the script will save the data into .txt files inside the data folder
 
 ## License
 

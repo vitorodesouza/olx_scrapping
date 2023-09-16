@@ -1,13 +1,9 @@
 from bs4 import BeautifulSoup
 from random import randint
 from time import sleep
-import requests
-import json
 from src.config import load_config
 import src.dbconnection as db
-import logging
-import random
-import sys
+import logging, random, sys, os, json, requests
 
 # Configure the logging settings
 log_filename = 'scrapping.log'
@@ -230,7 +226,8 @@ def ScrapCars_Olx(brand='jeep', model='compass',list_states=['sc'], save_in_data
                 break
             else:
                 filtered_ads = filter_advertising(ads)
-                
+            
+            # We are going to save the data in a file or in the database
             if save_in_database:
                 try:
                     insert_in_database(state, model, brand, filtered_ads, database, features, list_type_features, list_type_features_map)
@@ -241,7 +238,19 @@ def ScrapCars_Olx(brand='jeep', model='compass',list_states=['sc'], save_in_data
                     errors[state] += 1
                     continue 
             else:
-                print(f'Scrapped data: {filtered_ads}')
+                try: 
+                    if not os.path.exists('./data'): 
+                        os.makedirs('./data')
+                    with open(f'./data/{model}_{brand}_{state}.txt', 'a') as f: 
+                        for ads in filtered_ads:
+                            json.dump(ads, f)
+                            f.write('\n')
+                except Exception as e:
+                    print('Error saving scrapped data into a file' + str(e))
+                    logging.error('Error saving scrapped data into a file' + str(e))
+                    errors['total'] += 1
+                    errors[state] += 1
+                    continue 
         
         # Sleep because it's good manners to not flood the server with requests 
         # We avoid being blocked as well
