@@ -42,14 +42,19 @@ You also need to have a PostgreSQL server installed as the script assumes its pr
 
     ```bash
     python -m venv ~/.venv # Create a virtual environment
+    ```
+    ```bash
     source .venv/bin/activate # Activate your virtual environment (if you're running linux)
     .venv/Scripts/activate.bat # (if you're running cmd in windows)
+    .venv/Scripts/activate.ps1 # (if you're running PowerShell in windows or using Visual Studio)
+    ```
+    ```bash
     pip install -r requirements.txt # Install the project's requirements
     ```
 
 3. Update the database configuration in config.json with your PostgreSQL credentials.
 
-Use the config_example.json file as template and replace with your PostgreSQL credentials.
+    Use the config_example.json file as template and replace with your PostgreSQL credentials.
 
 ## Usage
 
@@ -69,6 +74,8 @@ Use the config_example.json file as template and replace with your PostgreSQL cr
     ```
 
     Replace <brand> and <model> with the desired car brand and model, and <state1> <state2> ... with the list of states you want to scrape data from.
+    - brand and model are required 
+    - states are not required. If you don't specify a list of states, the script will scrap data from all states of Brazil.
 
 3. Save Data to Database Option
 
