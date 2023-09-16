@@ -93,7 +93,8 @@ def insert_in_database(state, model, brand, json_list, database, features,list_t
         port=database['port'],
         columns_list=columns_list,
         values_list=values_list,
-        batch_commit=False
+        batch_commit=False,
+        ignore_duplicates=True
     )
 ## ------------------------------------------------------------------------------------------------------------------
 

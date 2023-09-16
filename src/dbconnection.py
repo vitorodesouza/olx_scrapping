@@ -1,5 +1,6 @@
 
 import psycopg2 as pg2
+from psycopg2 import errors
 import pandas as pd
 
 ## ------------------------------------------------------------------------------------------------------------------
@@ -138,7 +139,7 @@ def delete_table(database, usr, password, table_name, Cas_Res = 'CASCADE', hostn
 
 ## ------------------------------------------------------------------------------------------------------------------
 # Function insert data into a table in a database
-def insert(database, usr, password, table_name, columns_list, values_list, hostname='localhost', port='5432'):
+def insert(database, usr, password, table_name, columns_list, values_list, hostname='localhost', port='5432', ignore_duplicates=False):
     """
     Parameters
     ----------
@@ -180,8 +181,13 @@ def insert(database, usr, password, table_name, columns_list, values_list, hostn
             # print(f'Inserting into table: {table_name}')
             cur.executemany(query,values_list)
         conn.commit()
+    except errors.UniqueViolation as error:
+        if ignore_duplicates:
+            pass
+        else:
+            print(error)
     except (Exception, pg2.DatabaseError) as error:
-        print(error)
+        print(f'Error: {error}')
     finally:
         if conn is not None:
             conn.close()
@@ -189,7 +195,7 @@ def insert(database, usr, password, table_name, columns_list, values_list, hostn
 
 ## ------------------------------------------------------------------------------------------------------------------
 # Function insert data faster into a table in a database
-def insert_faster(database: str, usr: str, password: str, table_name: str, columns_list: list[str], values_list: list[tuple], hostname='localhost', port='5432') -> None:
+def insert_faster(database: str, usr: str, password: str, table_name: str, columns_list: list[str], values_list: list[tuple], hostname='localhost', port='5432', ignore_duplicates=False) -> None:
     """
     Parameters
     ----------
@@ -233,7 +239,12 @@ def insert_faster(database: str, usr: str, password: str, table_name: str, colum
             args = ','.join(cur.mogrify(string_values, i).decode('utf-8') for i in values_list)
             # print(query + args)
             cur.execute(query + args)
-        conn.commit()    
+        conn.commit()
+    except errors.UniqueViolation as error:
+        if ignore_duplicates:
+            pass
+        else:
+            print(error)
     except (Exception, pg2.DatabaseError) as error:
         print(error)
     finally:
@@ -243,7 +254,7 @@ def insert_faster(database: str, usr: str, password: str, table_name: str, colum
 
 ## ------------------------------------------------------------------------------------------------------------------
 # Function to flexibly insert data into a table in a database
-def insert_flex(database: str,usr: str, password: str, table_name: str, columns_list: list[list], values_list: list[tuple], hostname='localhost', port='5432', batch_commit=True) -> None:
+def insert_flex(database: str,usr: str, password: str, table_name: str, columns_list: list[list], values_list: list[tuple], hostname='localhost', port='5432', batch_commit=True, ignore_duplicates=False) -> None:
     """
     This function will insert data in separated SQL statements and will allow different number and sequence of columns and values.
 
@@ -304,6 +315,11 @@ def insert_flex(database: str,usr: str, password: str, table_name: str, columns_
                         # print(F'Insertion number {statement_number+1} into table: {table_name}')
                         cur.execute(query,values_list[statement_number])
                 conn.commit()
+            except errors.UniqueViolation as error:
+                if ignore_duplicates:
+                    pass
+                else:
+                    print(error)
             except (Exception, pg2.DatabaseError) as error:
                 conn.rollback()
                 print(error)
@@ -313,7 +329,7 @@ def insert_flex(database: str,usr: str, password: str, table_name: str, columns_
         else:
             # Iterate over the columns_list and values_list and insert individually into the table
             for statement_number in range(len(columns_list)):
-                insert(database, usr, password, table_name, columns_list[statement_number], [values_list[statement_number]], hostname=hostname, port=port)
+                insert(database, usr, password, table_name, columns_list[statement_number], [values_list[statement_number]], hostname=hostname, port=port, ignore_duplicates=ignore_duplicates)
 ## ------------------------------------------------------------------------------------------------------------------
 
 ## ------------------------------------------------------------------------------------------------------------------
